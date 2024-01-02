@@ -18,7 +18,7 @@ const MadlibForm = ({submit})=>{
 
     return (
         <div className="MadlibForm">
-            <form onSubmit={submit(formData)} >
+            <form onSubmit={(evt)=>submit(evt,formData)} >
                 <input type="text" 
                     id="noun1" 
                     name="noun1" 
