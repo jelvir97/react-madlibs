@@ -1,0 +1,11 @@
+.MadlibForm{
+    display: flex;
+    justify-content: center;
+}
+
+.MadlibForm-Input{
+    text-align: center;
+    margin-bottom: 10px;
+    display: block;
+}
+

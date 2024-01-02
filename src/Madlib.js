@@ -1,4 +1,6 @@
 import React, {useState} from "react"
+import MadlibForm from "./MadlibForm"
+import "./Madlib.css"
 
 const Madlib = ()=>{
     const [answers, setAnswers] = useState()
@@ -10,7 +12,9 @@ const Madlib = ()=>{
     }
     return(
         <div className="Madlib">
-            {answers ? <Madlib-Form submit={submit}/> : <Madlib-Story reset={reset}/>}
+            <h1>Madlibs!</h1>
+            <MadlibForm submit={submit}/>
+            {/* {answers ? <MadlibForm submit={submit}/> : <MadlibStory reset={reset}/>} */}
         </div>
     )
 }
