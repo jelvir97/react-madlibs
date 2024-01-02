@@ -1,5 +1,10 @@
 import React from "react";
 
+/**
+ * Renders story based off of answers.
+ * 
+ * Reset button toggles to fresh form.
+ */
 const MadlibStory = ({reset, answers})=>{
     return (
         <>

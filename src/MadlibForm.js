@@ -4,6 +4,7 @@ import "./MadlibForm.css"
 /**
  * Renders form for madlib answers
  * 
+ * Submit toggles to story with input values
  */
 const MadlibForm = ({submit})=>{
     const INITIAL_DATA = {
