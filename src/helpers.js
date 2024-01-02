@@ -4,8 +4,10 @@
  */
 
 const validateData =(data)=>{
-    for(let val of data){
-        if(val==="") return false
+    for(let key in data){
+        if(data[key]==="") return false
     }
     return true
 }
+
+export {validateData}

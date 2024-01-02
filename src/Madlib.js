@@ -1,6 +1,7 @@
 import React, {useState} from "react"
 import MadlibForm from "./MadlibForm"
 import MadlibStory from "./MadlibStory"
+import { validateData } from "./helpers";
 import "./Madlib.css"
 
 const Madlib = ()=>{
@@ -8,8 +9,11 @@ const Madlib = ()=>{
     const [toggleStory, setToggleStory] = useState(false)
     const submit = (evt,data)=>{
         evt.preventDefault()
-        setAnswers(()=>data)
-        setToggleStory(()=>!toggleStory)
+        if(validateData(data)){
+            setAnswers(()=>data)
+            setToggleStory(()=>!toggleStory)
+        }
+
     }
     const reset = ()=>{
         setAnswers(null)
