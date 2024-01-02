@@ -1,6 +1,10 @@
 import React, {useState} from "react";
 import "./MadlibForm.css"
 
+/**
+ * Renders form for madlib answers
+ * 
+ */
 const MadlibForm = ({submit})=>{
     const INITIAL_DATA = {
         noun1:'',
@@ -8,7 +12,10 @@ const MadlibForm = ({submit})=>{
         adjective:'',
         color:''
     }
+    //state for controlled form fields
     const [formData, setFormData]= useState(INITIAL_DATA)
+
+    //sets the form data to new object with changed value
     const handleChange = (evt)=>{
         setFormData({
             ...formData,
