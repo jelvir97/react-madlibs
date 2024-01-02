@@ -1,4 +1,4 @@
-import Madlib from './Madlib';
+import Madlib from "./Madlib"
 import './App.css';
 
 function App() {

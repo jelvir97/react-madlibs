@@ -10,7 +10,6 @@ const MadlibForm = ({submit})=>{
     }
     const [formData, setFormData]= useState(INITIAL_DATA)
     const handleChange = (evt)=>{
-        evt.preventDefault()
         setFormData({
             ...formData,
             [evt.target.name] :evt.target.value
